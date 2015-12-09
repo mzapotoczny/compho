@@ -1,0 +1,17 @@
+How long did the assignment take?
+ - It took about 3-5h
+
+Any extras?
+ - Median filter is a little bit faster than naive implementation.
+   Time to otain 3 images from lighthouse example is approx 1s
+ - Some parameters of the program can be tuned by program parameters (check --help)
+
+Collaboration acknowledgment.
+ None
+
+What was most unclear/difficult?
+ In my opinion the most unclear thing was the description of obtaining channels
+ other than green in edge-based demosaicing. 
+
+What was most exciting?
+ Like always in image processing - seeing results 
