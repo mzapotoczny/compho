@@ -1,0 +1,68 @@
+Description:
+Briefly describe the paper and its contribution to computer graphics and interactive techniques. Please give your assessment of the scope and magnitude of the paper's contribution.
+
+    Paper describes removal of camera shake from a single photograph. The method
+    is based on recovering the blur kernel with some prior assumptions on the
+    image and gradient, and then using deconvolution algorithm to obtain the result.
+    Camera shake is pretty common problem in photography, so good deshaking algorithm
+    is very desirable.
+    
+
+Clarity of Exposition:
+Is the exposition clear? How could it be improved?
+
+    Flow of the paper is clear. Although it requires knowledge of algorithm
+    described in "MISKIN , J., AND MACKAY , D. J. C. 2000. Ensemble Learning
+    for Blind Image Separation and Deconvolution. In Adv. in Independent
+    Component Analysis, M. Girolani, Ed. Springer-Verlag.
+
+
+Quality of References:
+Are the references adequate? List any additional references that are needed.
+
+    References are adequate.
+
+
+Reproducibility:
+Could the work be reproduced from the information in the paper? Was any code or data submitted with the supplemental materials? If so, does it support the claims in the paper? Are all important algorithmic or system details discussed adequately in the paper?
+
+    Yes, work could be reproduced. Full algorithm is listed in the paper.
+
+
+Rating:
+Please rate this paper on a continuous scale from 1 to 5, where:
+
+1 = Definitely reject. I would protest strongly if it's accepted.
+2 = Probably reject. I would argue against this paper.
+3 = Possibly accept, but only if others champion it.
+4 = Probably accept. I would argue for this paper.
+5 = Definitely accept. I would protest strongly if it's not accepted.
+
+Please base your rating on the paper as it was submitted.
+
+    3.5
+
+	
+Reviewer Expertise:
+Please rate your expertise in the subject area of the paper on a continuous scale from 1 to 3, where:
+
+1=Beginner
+2=Knowledgeable
+3=Expert.
+
+    1
+
+
+Explanation of Rating:
+Explain your rating by discussing the strengths and weaknesses of the submission, contributions, and the potential impact of the paper.  Include suggestions for improvement and publication alternatives, if appropriate. Be thorough. Be fair. Be courteous. Your evaluation will be forwarded to the authors during the rebuttal period.
+
+    The results obtained in the paper looks good, but there is still room for improvement.
+    Most results have ringing artefacts, typical for deblurring, but they are removable
+    in post-processing. Without this algorithm, the image would probably be of no use.
+
+
+Private Comments:
+You may enter private comments for the papers committee here. These comments will not be sent to the paper author(s).  Please do not mention any other papers that are currently in review, or the names of people associated with these papers.
+
+    No comments.
+
