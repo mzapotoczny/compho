@@ -1,0 +1,12 @@
+How long did the assignment take?
+    3,5 hours
+Any extras?
+    Apart from implementing plain gradient descent and conjugate gradient descent
+    I wrote GD with momentum. This simple technique (used in machine learning) is
+    based on idea that usually we don't want to change direction very rapidly (zig-zagging).
+    so, to current descent vector (r) we add previous one * momentum constant.
+    Results: It converges much quicker than plain GD, but slower than conjugate.
+What was most unclear/difficult?
+    -
+What was most exciting?
+    Playing with results.
