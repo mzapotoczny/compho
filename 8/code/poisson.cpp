@@ -166,7 +166,7 @@ void cgdExample() {
 
     mask /= 255.0;
     
-    std::vector<int> iters = {0,5,10,20,50};
+    std::vector<int> iters = {0,5,10,20,50, 200, 1000};
 
     rgbImageList lst = PoissonCG(bg, fg, mask, iters, 0, 0);
 
@@ -185,6 +185,12 @@ void mgdExample() {
     rgbImageList lst = PoissonMomentum(bg, fg, mask, iters, 0, 0);
 
     dumpList("/tmp/mgd_", iters, lst);
+}
+
+void prepareMask(rgbImage& img){
+    cimg_forXYC(img, x, y, c){
+        img(x, y, c) = (img(x,y,c) == 0) ? 0.0 : 1.0;
+    }
 }
 
 int main(int argc, char** argv){
@@ -210,6 +216,7 @@ int main(int argc, char** argv){
     rgbImage fg = rgbImage(fg_path);
     rgbImage mask = rgbImage(mask_path);
     mask /= 255.0;
+    prepareMask(mask);
 
     rgbImageList lst;
     rgbImage last;
